@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      font-family: sans-serif;
+    }
+
+  
+    #particles-js {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+
+    fieldset {
+      border: 2px solid #00bfff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 0 10px #00bfff;
+      background-color: transparent; 
+      max-width: 400px;
+      width: 90%;
+      margin: 40px auto;
+    }
+
+    legend {
+      color: #00bfff;
+      font-weight: bold;
+      font-size: 20px;
+      text-shadow: 0 0 5px #00bfff;
+    }
+
+    .form-container {
+      background-color: transparent;
+      position: relative;
+      z-index: 1; 
+    }
+
+    .form-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+      flex-wrap: wrap;
+    }
+
+    label {
+      color: #00bfff;
+      font-weight: bold;
+      text-shadow: 0 0 5px #00bfff;
+      font-size: 18px;
+      flex: 1 1 40%;
+      min-width: 100px;
+    }
+
+    input {
+      flex: 1 1 55%;
+      min-width: 150px;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #00bfff; 
+      color: black; 
+      font-weight: bold;
+      text-shadow: 0 0 5px #fff;
+      box-shadow: 0 0 10px #00bfff;
+      transition: box-shadow 0.3s ease;
+    }
+
+    input:focus {
+      outline: none;
+      box-shadow: 0 0 30px #00bfff; 
+      color: black;
+      text-shadow: 0 0 8px #fff; 
+    }
+
+    input::placeholder {
+      color: rgba(0, 0, 0, 0.6);
+      text-shadow: 0 0 2px #fff;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #00bfff;
+      color: black;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      box-shadow: 0 0 10px #00bfff;
+      cursor: pointer;
+      transition: box-shadow 0.3s ease;
+    }
+
+    button:hover {
+      box-shadow: 0 0 15px #00bfff;
+    }
+
+    /* استجابة للموبايل */
+    @media (max-width: 600px) {
+      .form-row {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      label, input {
+        flex: 1 1 100%;
+        min-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="particles-js"></div>
+
+  <fieldset>
+    <legend>Create Account</legend>
+    <div class="form-container">
+      <form>
+        <div class="form-row">
+          <label for="name">Name:</label>
+          <input id="name" type="text" placeholder="name" required>
+        </div>
+
+        <div class="form-row">
+          <label for="country">Country:</label>
+          <input id="country" type="text" placeholder="country" required>
+        </div>
+
+        <div class="form-row">
+          <label for="governorate">Governorate:</label>
+          <input id="governorate" type="text" placeholder="governorate" required>
+        </div>
+
+        <div class="form-row">
+          <label for="city">City:</label>
+          <input id="city" type="text" placeholder="city" required>
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email:</label>
+          <input id="email" type="email" placeholder="example@gmail.com" required>
+        </div>
+
+        <div class="form-row">
+          <label for="phone">Phone:</label>
+          <input id="phone" type="tel" placeholder="phone" required>
+        </div>
+
+        <div class="form-row">
+          <label for="password">Password:</label>
+          <input id="password" type="password" placeholder="password" required>
+        </div>
+
+        <div class="form-row">
+          <label for="confirmPassword">Confirm:</label>
+          <input id="confirmPassword" type="password" placeholder="confirmPassword" required>
+        </div>
+
+        <button type="submit">Next</button>
+      </form>
+    </div>
+  </fieldset>
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  <script>
+    particlesJS("particles-js", {
+      "particles": {
+        "number": { "value": 120 },
+        "size": { "value": 3 },
+        "move": { "speed": 2, "direction": "none", "out_mode": "bounce" },
+        "line_linked": {
+          "enable": true,
+          "distance": 150,
+          "color": "#ffffff",
+          "opacity": 0.4,
+          "width": 1
+        }
+      },
+      "interactivity": {
+        "events": {
+          "onhover": { "enable": true, "mode": "repulse" }
+        }
+      }
+    });
+  </script>
+</body>
+</html>
