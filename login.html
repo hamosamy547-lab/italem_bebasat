@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>اتعلم ببساطه</title>
+</head>
+<body>
+     <header>
+  <div style="display: flex; justify-content: space-between; align-items: center; padding: 15px 30px; background: rgba(0, 191, 255, 0.2); box-shadow: 0 0 10px #00bfff;">
+    <!-- الشعار -->
+    <h1 style="color: #00bfff; text-shadow: 0 0 5px #00bfff; margin: 0;">اتعلم ببساطه</h1>
+
+    <!-- المنيو -->
+ <nav>
+   <a href="index.html">Home</a>
+   <a href="about.html">About</a>
+   <a href="contact.html">Contact</a>
+   <a href="indx.html" class="login-link">
+     Login
+    <img src="OIP (1).webp" alt="">
+   </a>
+</nav>
+  </div>
+</header>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      font-family: sans-serif;
+      color: #fff;
+      text-align: center;
+    }
+
+    h1 {
+      color: #00bfff;
+      text-shadow: 0 0 5px #00bfff;
+      margin-top: 40px;
+    }
+
+    .form-container {
+      margin: 50px auto;
+      width: 300px;
+      background: rgba(0, 191, 255, 0.1);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px #00bfff;
+    }
+
+    .form-container input {
+      width: 90%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+      outline: none;
+    }
+
+    .form-container button {
+      width: 100%;
+      padding: 12px;
+      background-color: #00bfff;
+      border: none;
+      border-radius: 8px;
+      color: black;
+      font-weight: bold;
+      font-size: 16px;
+      box-shadow: 0 0 10px #00bfff;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .form-container button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 0 20px #00bfff;
+    }
+input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background-color: rgba(0, 191, 255, 0.2); /* خلفية زرقاء شفافة */
+  color: #000; /* النص بالأسود */
+  font-weight: bold;
+  box-shadow: 0 0 10px #00bfff; /* توهج أزرق */
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+input:focus,
+input:hover {
+  background-color: rgba(0, 191, 255, 0.4); /* الأزرق يبان أكتر عند التركيز */
+  box-shadow: 0 0 20px #00bfff;
+}
+
+    .back-btn {
+      margin-top: 20px;
+      display: inline-block;
+      color: #00bfff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    #particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* يخليها تحت المحتوى */
+}
+  </style>
+</head>
+<body>
+    <div id="particles-js"></div>
+  <h1>لدي حساب</h1>
+
+  <div class="form-container">
+    <form>
+        
+      <input type="email" placeholder="email" required>
+      <input type="password" placeholder="password" required>
+      <button type="submit">تسجيل الدخول</button>
+    </form>
+  </div>
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+<script>
+  particlesJS("particles-js", {
+    particles: {
+      number: { value: 120 },
+      size: { value: 3 },
+      move: { speed: 2 },
+      line_linked: {
+        enable: true,
+        distance: 150,
+        color: "#00bfff",
+        opacity: 0.4,
+        width: 1
+      }
+    },
+    interactivity: {
+      events: {
+        onhover: { enable: true, mode: "repulse" }
+      }
+    }
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+nav a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px; /* المسافة بين الكلمة والصورة */
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  color: #00bfff;
+  text-shadow: 0 0 5px #00bfff;
+}
+
+nav a img {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #00bfff;
+  transition: box-shadow 0.3s ease;
+}
+
+nav a:hover img {
+  box-shadow: 0 0 20px #00bfff;
+}

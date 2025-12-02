@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>اتعلم ببساطه</title>
+      <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      font-family: sans-serif;
+      color: #fff;
+      text-align: center;
+    }
+ /* الشكل الأساسي لكل الأزرار */
+button {
+  padding: 15px;
+  background-color: #00bfff;
+  border: none;
+  border-radius: 8px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  box-shadow: 0 0 10px #00bfff;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px #00bfff;
+}
+
+/* زرار الرجوع للرئيسية */
+.back-btn {
+  position: fixed;   /* ثابت في الشاشة */
+  left: 20px;        /* ناحية الشمال */
+  top: 20px;         /* فوق */
+  z-index: 1000;     /* فوق أي محتوى */
+}
+
+    h1 {
+      color: #00bfff;
+      text-shadow: 0 0 5px #00bfff;
+      margin-top: 40px;
+    }
+    
+
+    .buttons {
+      display: flex;
+      flex-direction: column; /* يخلي الأزرار تحت بعض */
+      align-items: center;
+      gap: 20px;
+      margin-top: 50px;
+    }
+
+    .buttons button {
+      width: 200px;
+      padding: 15px;
+      background-color: #00bfff;
+      border: none;
+      border-radius: 8px;
+      color: black;
+      font-weight: bold;
+      font-size: 18px;
+      box-shadow: 0 0 10px #00bfff;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .buttons button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 0 20px #00bfff;
+    }
+    #particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* تحت كل حاجة */
+}
+
+  </style>
+ <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <header>
+  <div style="display: flex; justify-content: space-between; align-items: center; padding: 15px 30px; background: rgba(0, 191, 255, 0.2); box-shadow: 0 0 10px #00bfff;">
+    <!-- الشعار -->
+    <h1 style="color: #00bfff; text-shadow: 0 0 5px #00bfff; margin: 0;">اتعلم ببساطه</h1>
+
+    <!-- المنيو -->
+ <nav>
+   <a href="index.html">Home</a>
+   <a href="about.html">About</a>
+   <a href="contact.html">Contact</a>
+   <a href="indx.html" class="login-link">
+     Login
+    <img src="OIP (1).webp" alt="">
+   </a>
+</nav>
+  </div>
+</header>
+    
+    <h1>تأسيس لغات البرمجة</h1>
+
+  <div class="buttons">
+    <button onclick="location.href='python.html'">Python</button>
+    <button onclick="location.href='c.html'">C</button>
+    <button onclick="location.href='cpp.html'">C++</button>
+    <button onclick="location.href='java.html'">Java</button>
+    <button onclick="location.href='js.html'">JavaScript</button>
+  </div>
+ 
+  <script>
+  particlesJS("particles-js", {
+    particles: {
+      number: { value: 120 },        // عدد النقاط
+      size: { value: 3 },            // حجم النقاط
+      move: { speed: 2 },            // سرعة الحركة
+      line_linked: {
+        enable: true,
+        distance: 150,
+        color: "#00bfff",            // لون الخطوط
+        opacity: 0.4,
+        width: 1
+      }
+    },
+    interactivity: {
+      events: {
+        onhover: { enable: true, mode: "repulse" } // تفاعل عند مرور الماوس
+      }
+    }
+  });
+</script>
+
+</body>
+</html>
