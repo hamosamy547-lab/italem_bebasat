@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="style.css">
   <title>اتعلم ببساطه</title>
   <style>
     body {
@@ -62,32 +63,32 @@
       flex: 1 1 40%;
       min-width: 100px;
     }
+input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background-color: rgba(0, 191, 255, 0.2); /* خلفية زرقاء شفافة */
+  color: #000; /* النص بالأسود */
+  font-weight: bold;
+  box-shadow: 0 0 10px #00bfff; /* توهج أزرق */
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
 
-    input {
-      flex: 1 1 55%;
-      min-width: 150px;
-      padding: 10px;
-      border: none;
-      border-radius: 5px;
-      background-color: #00bfff; 
-      color: black; 
-      font-weight: bold;
-      text-shadow: 0 0 5px #fff;
-      box-shadow: 0 0 10px #00bfff;
-      transition: box-shadow 0.3s ease;
     }
 
-    input:focus {
-      outline: none;
-      box-shadow: 0 0 30px #00bfff; 
-      color: black;
-      text-shadow: 0 0 8px #fff; 
-    }
+  input:focus,
+input:hover {
+  background-color: rgba(0, 191, 255, 0.4); /* الأزرق يبان أكتر عند التركيز */
+  box-shadow: 0 0 20px #00bfff;
+}
 
-    input::placeholder {
+
+    /* input::placeholder {
       color: rgba(0, 0, 0, 0.6);
       text-shadow: 0 0 2px #fff;
-    }
+    } */
 
     button {
       width: 100%;
@@ -121,7 +122,24 @@
 </head>
 <body>
   <div id="particles-js"></div>
+ <header>
+  <div style="display: flex; justify-content: space-between; align-items: center; padding: 15px 30px; background: rgba(0, 191, 255, 0.2); box-shadow: 0 0 10px #00bfff;">
+    <!-- الشعار -->
+    <h1 style="color: #00bfff; text-shadow: 0 0 5px #00bfff; margin: 0;">اتعلم ببساطه</h1>
 
+    <!-- المنيو -->
+ <nav>
+   <a href="index.html">Home</a>
+   <a href="about.html">About</a>
+   <a href="contact.html">Contact</a>
+   <a href="indx.html" class="login-link">
+     Login
+    <img src="OIP (1).webp" alt="">
+   </a>
+</nav>
+  </div>
+</header>
+</nav>
   <fieldset>
     <legend>Create Account</legend>
     <div class="form-container">
@@ -167,6 +185,7 @@
         </div>
 
         <button type="submit">Next</button>
+        <p>لدي حساب؟ <a href="login.html">لدي حساب</a></p>
       </form>
     </div>
   </fieldset>
